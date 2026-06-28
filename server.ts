@@ -1918,4 +1918,8 @@ process.on("uncaughtException", (error) => {
   console.error("[Uncaught Exception] Error details:", error.message, error.stack);
 });
 
-startServer();
+if (!process.env.VERCEL) {
+  startServer();
+}
+
+export default app;

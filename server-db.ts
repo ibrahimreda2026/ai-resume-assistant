@@ -1,8 +1,10 @@
 import fs from "fs";
 import path from "path";
 
-// Define the database path in a secure writable location
-const DB_PATH = path.join(process.cwd(), "enterprise-data.json");
+// Define the database path in a secure writable location (Vercel has read-only filesystem except /tmp)
+const DB_PATH = process.env.VERCEL 
+  ? path.join("/tmp", "enterprise-data.json")
+  : path.join(process.cwd(), "enterprise-data.json");
 
 // System Interfaces representing the enterprise SaaS database schema
 export interface User {
