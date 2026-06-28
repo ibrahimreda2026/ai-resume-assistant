@@ -1,0 +1,6 @@
+{
+  "name": "AI Resume Assistant",
+  "description": "A comprehensive SaaS AI Resume Assistant featuring Resume Analysis, ATS scoring, Resume Improvement, Cover Letter Generation, Interview Practice, Job Description Analyzer, Dark Mode, and Arabic/English support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
